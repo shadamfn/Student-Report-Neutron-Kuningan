@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiswaPlus - Dashboard Siswa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="mobile-toggle" id="mobile-toggle">
+        <i data-lucide="menu"></i>
+    </div>
+    <nav class="sidebar" id="sidebar">
+        <div class="logo">
+            <i data-lucide="graduation-cap"></i>
+            <span>SiswaPlus</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#dashboard" class="nav-item active" onclick="navigate('dashboard')">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </a></li>
+            <li><a href="#rapor" class="nav-item" onclick="navigate('rapor')">
+                    <i data-lucide="file-text"></i> Rapor Saya
+                </a></li>
+            <li><a href="#bank-soal" class="nav-item" onclick="navigate('bank-soal')">
+                    <i data-lucide="library"></i> Bank Soal
+                </a></li>
+            <li><a href="#track" class="nav-item" onclick="navigate('track')">
+                    <i data-lucide="activity"></i> Progress & Presensi
+                </a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="welcome-text">
+                <h1>Halo, <span id="user-name">Siswa</span>! 👋</h1>
+                <p style="color: var(--text-muted);">Selamat datang kembali ke portal belajar.</p>
+            </div>
+            <div class="user-profile">
+                <span id="user-class" style="font-weight: 500;">Kelas XII</span>
+                <img id="user-avatar" src="" alt="Avatar" class="avatar">
+            </div>
+        </header>
+
+        <div id="content-area">
+            <!-- Content will be injected here by app.js -->
+        </div>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
